@@ -1,0 +1,37 @@
+.errorBoundary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+    .errorTitle {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .errorMessage {
+        font-size: 14px;
+        opacity: 0.5;
+        margin-bottom: 20px;
+    }
+
+    .retryBtn {
+        padding: 10px 30px;
+        background: var(--gradient);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
